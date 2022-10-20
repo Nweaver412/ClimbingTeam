@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tryout Info</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>       
+      .navbar-custom {
+          background-color: rgb(86, 90, 92);
+      }
+      .navbar-black {
+        background-color: black;
+      }
+      .font-gold {
+        color: rgb(207, 184, 124);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .font-black {
+        color: black;
+      }
+      .font-white {
+        color:white;
+      }
+      .btn-margin {
+        margin-left: 50px;
+        margin-right: 75px;
+        margin-top: 18px;
+        font-weight: 600;
+        font-size: x-large;
+      }
+      .btn-center {
+        margin-left: 400px;
+        margin-right: 75px;
+        margin-top: 18px;
+        font-weight: 600;
+        font-size: x-large;
+        
+      }
+      
+      .hover-underline-animation-black {
+        display: inline-block;
+        position: relative;
+        color: black;
+      }
 
+      .hover-underline-animation-black:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #CFB87C;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+
+      .hover-underline-animation-black:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+
+      .zoom {
+        background-color: white;
+        transition: transform .2s; /* Animation */
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+    }
+
+    .zoom:hover {
+        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+      
+  </style>
+    <nav class="sticky-top navbar navbar-expand navbar-custom">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse topnav-centered" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link font-black btn-center hover-underline-animation-black" href="../Tryouts/tryouts.html">Tryouts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-black btn-margin hover-underline-animation-black" aria-current="page" href="../Roster/roster.html">Roster</a>
+            </li>
+            <a class="navbar-brand" href="../Home/home.html"><img src="../../resources/images/mainLogo.png" width="250" ></a>
+
+            <li class="nav-item">
+              <a class="nav-link font-black btn-margin hover-underline-animation-black" aria-current="page" href="../Photos/photos.html">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link font-gold btn-margin " aria-current="page" href="#">Sponsors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <div class="">
+        <div class="row">
+            <div class="text-center">
+              <a href="https://www.sportiva.com/?gclid=CjwKCAjwwL6aBhBlEiwADycBIBRzKo5c6H2H0UI8Juy4ENUccV2u-Hj5R5gIw7iuCZyZ8np13YT-hBoCX1YQAvD_BwE&gclsrc=aw.ds"><img src="../../resources/images/sportiva.png" width="300"></a>
+              <a href="https://www.theclimbclinic.com/"><img src="../../resources/images/climbingClinic.png" width="400"></a>
+              <a href="https://kinetikclimbing.com/"><img src="../../resources/images/kinetik.png"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center">
+              <a href=""><img src="../../resources/images/elCap.png"></a>
+              <a href="https://www.abckidsboulder.com/"><img src="../../resources/images/abcLogo.png"></a>
+
+              <a href="https://tensionclimbing.com/"><img src="../../resources/images/tension.png" width="220"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-center">
+                <a href="https://www.prana.com/"><img src="../../resources/images/prana.png"></a>
+                <a href="https://honeystinger.com/"><img src="../../resources/images/honeyStinger.png"></a>
+                <a href=""><img src="../../resources/images/elCap.png"></a>
+            </div>
+        </div>
+    </div>
+  </body>
+
+<footer>
+    <!-- Footer -->
+<footer class="text-center text-lg-start navbar-black text-muted">
+  <!-- Section: Social media -->
+    <!-- Left -->
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="navbar-black">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4 font-gold">
+            <i class="fas fa-gem me-3 "></i>About me
+          </h6>
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 navbar-black">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 font-gold">
+            Relevent Links
+          </h6>
+          <a href="../../resources/images/instagramLogo.html"></a>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1">
+          <!-- Links -->
+          <h6><a class="text-uppercase fw-bold mb-4 font-gold hover-underline-animation-white" href="../ContactUs/contact.html">contact us</a></h6>
+          
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 navbar-black">
+    <img src="../../resources/images/buffLogo.png" height="50">
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  </footer>
+</html>
