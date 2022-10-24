@@ -61,39 +61,56 @@
       .hover-underline-animation-black:hover:after {
         transform: scaleX(1);
         transform-origin: bottom left;
+      }   
+      
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .row .column{
+        flex: 33.3%;
+        width: auto;
+        overflow: hidden;
+        padding:0 4px;
+        height: 100%;
+      }
+      .row .column img{
+        margin-top: 2%;
+        width: 100%;
+        height: 100%;
       }
 
-      .zoom {
-        background-color: white;
-        transition: transform .2s; /* Animation */
-        width: 200px;
-        height: 200px;
-        margin: 0 auto;
-    }
-
-    .zoom:hover {
-        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    }
-      
+      /*Responsive photos*/
+      @media only screen and (max-width:800){
+        .row .column{
+          flex: 50%;
+        }
+      }
+      @media only screen and (max-width:600){
+        .row .column{
+          flex: 100%;
+        }
+      }
   </style>
     <nav class="navbar navbar-expand-lg sticky-top navbar-custom">
-        <a class="navbar-brand" href="../Home/home.html"><img src="../resources/mainLogo.png" width="250" ></a>
+        <a class="navbar-brand" href="../Home/"><img src="../resources/mainLogo.png" width="250" ></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link font-gold btn-center " href="#">Tryouts</a>
+                <a class="nav-link font-black btn-center hover-underline-animation-black" href="../Tryouts/">Tryouts</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-black btn-margin hover-underline-animation-black" aria-current="page" href="../Roster/roster.html">Roster</a>
+                <a class="nav-link font-black btn-margin hover-underline-animation-black" aria-current="page" href="../Roster/">Roster</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link font-black btn-margin hover-underline-animation-black" aria-current="page" href="../Photos/photos.html">Photos</a>
+                <a class="nav-link font-black btn-margin hover-underline-animation-black" aria-current="page" href="../Photos/">Photos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link btn-margin hover-underline-animation-black" aria-current="page" href="../Sponsors/sponsors.html">Sponsors</a>
+                <a class="nav-link font-gold btn-margin " aria-current="page" href="#">Sponsors</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
@@ -104,60 +121,23 @@
   </head>
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-6">
-              <h3>Tryout Info for the 2022-2023 Season</h3>
-              <p>           
-                Click <a class="link font-gold" href=":https://docs.google.com/forms/d/e/1FAIpQLScttPo6Z4h1koT1P7pG_sFsmIl-WxtXsi9xXhH_m6woqe2V6A/viewform"> here</a> for Tryout Application
-              </p> 
-              <ul>
-                <li>OFFICIAL TRYOUTS SEPTEMBER 25TH @ ABC KIDS CLIMBING</li>
-                <li>OPEN PRACTICES SEPTEMBER 12TH, 14TH, 19TH, 21ST @ MOVEMENT BOULDER 8:30-10:30PM</li>
-                <li>SEPTEMBER 11TH AND 18TH @ ABC KIDS CLIMBING 6PM-9PM</li>
-                <li>Sign up <a class="link font-gold" href="https://www.signupgenius.com/go/70a0d4aacad2ea7fd0-climbing">here</a> for tryouts</li>
-                </ul>
-              </p>
+        <div class="column">
+          <img src="../Photos/img/IMG_2026.jpeg">
+          <img src="../Photos/img/IMG_2027.jpeg">
+          <img src="../Photos/img/IMG_2028.jpeg">
         </div>
-        <div class="col-6">
-          <img src="../resources/mainLogo.png" width="500">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <img src="../resources/mainLogo.png" width="500">
-        </div>
-        <div class="col-6">
-          <h3>We understand that tryouts are an intimidating experience, so here are a few tips to help you out.</h3>
-          <p>
-            <ul>
-              <li>Bring your psyche! On the day of tryouts we will looking at your energy and enthusiasm, not only for climbing, but for the community around you. We suggest that you spend at least as much time climbing as you do meeting new people around the gym.</li>
-              <li>Try Hard. Part of what makes the CU Climbing Team such an awesome community is shared motivation for training, sending, and improving! An easy way to stand out is giving it your all.</li>
-              <li>Don't skip over the application. Every application essay is read before considering who does and does not make the team. Take your time and write a thoughtful 250 word response.</li>
-              <li>Lastly, HAVE FUN! It goes without saying that not everybody can make the team, but that doesn't mean we don't want you to be a part of our community. We hope that every person who attends tryouts will walk away with new friends and climbing partners, regardless of  your spot in team.</li>
-            </ul>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <h3>How do we decide?</h3>
-              <p> 
-                <ul>
-                  <li>How hard you climb. By no means do you need to be climbing v10+ to make team. That said, we do consider how hard you are able to climb in tryouts. For those of you who are speed or lead climbing specialists, don't worry. Come talk to us about whatever type of climbing you prefer and be sure to elaborate on your experience in the written portion of the essay.</li>
-                  <li>Your application. Every application is read by every member of the board. We cannot express how important it is to show effort on the application.</li>
-                  <li>Attitude. Come to the info meetings, start of year events, and tryouts with a good attitude. We consider your eagerness to be a part of this community alongside other factors (like how hard you climb).</li>
-                </ul>
-              </p>
-        </div>
-        <div class="col-6">
-          <img src="../resources/mainLogo.png" width="500">
+        <div class="column">
+          <img src="../Photos/img/IMG_2029.jpeg">
+          <img src="../Photos/img/IMG_2030.jpeg">
+          <img src="../Photos/img/IMG_2031.jpeg">
         </div>
       </div>
     </div>
   </body>
 <footer>
-  <footer class="bg-dark text-center text-white">
+<footer class="bg-dark text-center text-white">
     <div class="container p-4">
       <!-- Section: Social media -->
       <section class="mb-4">
@@ -204,5 +184,5 @@
       <a class="text-white" href="https://CuClimbing">CuClimbing.com</a>
     </div>
   </footer>
-</footer>
+  </footer>
 </html>
