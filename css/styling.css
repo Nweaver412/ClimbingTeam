@@ -1,0 +1,87 @@
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    padding-bottom: 220px; /* Margin bottom by footer height */
+    /* background-color: #f8f8f8; */
+}
+.main{
+    overflow:visible;
+}
+
+/* .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 214px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+*/
+
+.navbar-custom {
+    background-color: rgb(86, 90, 92);
+}
+.navbar-black {
+  background-color: black;
+}
+.font-gold {
+  color: rgb(207, 184, 124);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.font-black {
+  color: black;
+}
+.font-white {
+  color:white;
+}
+.btn-margin {
+  margin-left: 50px;
+  margin-right: 75px;
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: x-large;
+}
+.btn-center {
+  margin-right: 75px;
+  margin-top: 18px;
+  font-weight: 600;
+  font-size: x-large;
+  
+}
+
+.hover-underline-animation-black {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.hover-underline-animation-black:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #CFB87C;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation-black:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.zoom {
+  background-color: white;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
